@@ -1,0 +1,78 @@
+<html>   
+   <head>
+      <title>Lomakkeen validointi</title>  
+      <link rel="stylesheet" href="style.css">  
+       <link rel="stylesheet" href="lisko.jpg">
+      <script type = "text/javascript">
+      </script>      
+   </head>
+   
+   <body>
+      <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
+         <table cellspacing = "2" cellpadding = "2" border = "1">
+            
+            <tr>
+               <td align = "right">Name</td>
+               <td><input type = "text" name = "Name" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">EMail</td>
+               <td><input type = "text" name = "EMail" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Zip Code</td>
+               <td><input type = "text" name = "Zip" /></td>
+            </tr>
+            <tr>
+                <td align = "right">Password</td>
+                <td><input type = "text" name = "Password" /></td>
+             </tr>
+             <tr>
+                <td align = "right">Address</td>
+                <td><input type = "text" name = "Address" /></td>
+             </tr>
+             <tr>
+                <td align = "right">Gender</td>
+                <td><input type = "text" name = "Gender" /></td>
+             </tr>
+             <tr>
+                <td align = "right">Language</td>
+                <td><input type = "text" name = "Language" /></td>
+             </tr>
+             <tr>
+                <td align = "right">Usser ID</td>
+                <td><input type = "text" name = "Usser ID" /></td>
+             </tr>
+             <tr>
+                <td align = "right">If you have anything to add?</td>
+                <td><input type = "text" name = "If you have anything to add?" /></td>
+             </tr>
+             
+             
+            <tr>
+               <td align = "right">Country</td>
+               <td>
+                  <select name = "Country">
+                     <option value = "-1" selected>[choose yours]</option>
+                     <option value = "1">USA</option>
+                     <option value = "2">UK</option>
+                     <option value = "3">INDIA</option>
+                     <option value = "4">FINLAND</option>
+                     <option value = "5">JAPAN</option>
+                     <option value = "6">CHINA</option>
+                  </select>
+               </td>
+            </tr>
+            
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" value = "Submit" /></td>
+            </tr>
+            
+         </table>
+      </form>     
+      <img src="lisko.jpg" alt="lisko"> 
+   </body>
+</html>
